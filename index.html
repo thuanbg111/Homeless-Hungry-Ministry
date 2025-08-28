@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Home — HOMELESS & HUNGRY MINISTRY</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="HOMELESS & HUNGRY MINISTRY — EIN 82-3735949. Community outreach: food, hygiene & clothing.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="HOMELESS & HUNGRY MINISTRY logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero"><div class="container inner">
+    <span class="badge">Nonprofit Public Benefit • 501(c)(3) • EIN 82-3735949</span>
+    <h1><span class="upper-strong">HOMELESS & HUNGRY MINISTRY</span></h1>
+    <p>We serve our community with dignity by providing <strong>food assistance, hygiene kits, and clothing support</strong> to people facing homelessness or hunger in Compton and surrounding areas.</p>
+    <p><a class="btn btn-primary" href="about.html">Learn more</a> <a class="btn" href="programs.html">See programs</a></p>
+  </div></section>
+
+  <section class="section container split">
+    <div>
+      <h2>What We Do</h2>
+      <p>Immediate relief, consistent outreach, and trusted partnerships.</p>
+      <ul>
+        <li>Weekly food distribution &amp; hot meals</li>
+        <li>Hygiene &amp; clothing kits for street outreach</li>
+        <li>Referrals and collaboration with local shelters &amp; orgs</li>
+      </ul>
+    </div>
+    <figure class="figure"><img src="images/hero.jpg" alt="Community outreach in action"></figure>
+  </section>
+
+  <section class="section container grid-3">
+    <article class="card"><img src="images/education.jpg" alt="Food Assistance"><div class="card-body">
+      <h3>Food Assistance</h3><p>Groceries, hot meals, and nutrition staples for individuals and families.</p></div></article>
+    <article class="card"><img src="images/relief.jpg" alt="Hygiene & Clothing"><div class="card-body">
+      <h3>Hygiene &amp; Clothing</h3><p>Travel‑size hygiene kits, socks, and weather‑appropriate apparel.</p></div></article>
+    <article class="card"><img src="images/community.jpg" alt="Community Partners"><div class="card-body">
+      <h3>Community Partners</h3><p>Working with shelters, churches, and civic groups to expand impact.</p></div></article>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> HOMELESS & HUNGRY MINISTRY</div>
+      <div class="small">California Nonprofit Public Benefit — 501(c)(3) — EIN 82-3735949</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>Community outreach with <em>food</em>, <em>hygiene</em>, and <em>clothing</em> support for neighbors experiencing homelessness or hunger.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>1510 N. ROSE AVENUE<br>COMPTON, CA 90221<br>
+        <strong>Email:</strong> <a href="mailto:contact@homelesshungryministry.site">contact@homelesshungryministry.site</a><br>
+        <strong>Phone:</strong> <a href="tel:+18212009698">+1 821 200 9698</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
